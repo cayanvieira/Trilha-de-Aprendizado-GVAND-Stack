@@ -1,0 +1,3 @@
+query{
+  Person(first:10){_id, name}
+}
