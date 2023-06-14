@@ -16,11 +16,18 @@ let routes =[
         path: "/login",
         name: "login",
         components: { default: login },
-        meta: { forAuth: true, title: "Inicio" }
+        meta: { forAuth: false, title: "Inicio" }
     },
 ]
 
-let router = new Router({routes})
+let router = new Router({
+    mode: "history",
+    routes,
+    scrollBehavior() {
+        return { x: 0, y: 0 };
+    }
+});
+
 
 
 export default router
