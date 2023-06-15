@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.1",
+    "@babel/runtime": "^7.22.5",
     "@mdi/font": "^7.2.96",
     "@vue/apollo-composable": "^4.0.0-beta.1",
     "@vue/apollo-option": "^4.0.0-alpha.20",
@@ -17,7 +18,6 @@
     "graphql-tag": "^2.12.6",
     "vue": "^2.6.14",
     "vue-apollo": "^3.1.0",
-    "vue-cli-plugin-apollo": "^0.22.2",
     "vue-router": "3.5.2",
     "vuetify": "^2.6.0"
   },
@@ -29,8 +29,10 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "graphql-tag": "^2.9.0",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
+    "vue-cli-plugin-apollo": "~0.22.2",
     "vue-cli-plugin-vuetify": "~2.5.8",
     "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"
