@@ -1,5 +1,5 @@
 <template>    
-      <div class="black" >
+      <div class="black" >        
         <v-container>
           <v-text-field
             hide-details
@@ -67,7 +67,7 @@
   
   <script>
   export default {
-    name: "App",
+    name: "Home-page",
     data: () => ({
       detail: null,
       genres: ["Drama", "Comédia", "Ação", "Terror"],
@@ -105,15 +105,7 @@
     created() {
       this.agroupByGenre();
     },
-    computed: {},
-    // apollo: {
-    //   // Person: {
-    //   //   query() {
-    //   //     return require(`../../graphql/index.gql`);
-    //   //   },
-    //   //   variables() {}
-    //   //   }
-    // },
+    computed: {},   
     methods: {
       agroupByGenre() {
         let result = {};
