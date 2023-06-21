@@ -2,20 +2,27 @@ import Vue from "vue";
 import Router from "vue-router";
 
 Vue.use(Router)
-const home= () => import("@/pages/Home/index.vue");
-const login= () => import("@/pages/Login/index.vue");
+const home = () => import("@/pages/Home/index.vue");
+const login = () => import("@/pages/Login/index.vue");
+const signup =() => import("@/pages/Signup/index.vue");
 
 let routes =[
     {
-        path: "/",
-        name: "home",
+        path: "/home",
+        name: "Home-Page",
         components: { default: home },
         meta: { forAuth: false, title: "Inicio" }
     },
     {
-        path: "/login",
-        name: "login",
+        path: "/",
+        name: "Login-Page",
         components: { default: login },
+        meta: { forAuth: false, title: "Inicio" }
+    },
+    {
+        path: "/signup",
+        name: "Signup-Page",
+        components: { default: signup },
         meta: { forAuth: false, title: "Inicio" }
     },
 ]
