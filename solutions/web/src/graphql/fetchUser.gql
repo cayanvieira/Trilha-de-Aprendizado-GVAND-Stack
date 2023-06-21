@@ -1,0 +1,5 @@
+query FetchUser($userName:String!){
+  User(name:$userName){
+    name,userId
+  }
+}
