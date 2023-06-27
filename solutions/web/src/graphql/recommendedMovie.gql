@@ -1,0 +1,7 @@
+query recommendedMovies($userId:ID!) {
+  User(userId:$userId){  
+    RATED_rel(filter:{rating_gt:3}){      
+      Movie{title,movieId,poster}
+    }    
+  }
+}

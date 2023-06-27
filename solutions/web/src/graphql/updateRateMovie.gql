@@ -1,0 +1,8 @@
+# mutation UpdateRateMovie($userId:ID!$movieId:ID!,$rated:Float!){
+#     UpdateUserRATED_rel(
+#         from: {_UserInput:$userId},
+#         to: {_MovieInput:$movieId}
+#         data:{rating:$rated,timestamp:1}
+#     ){from}
+# }
+

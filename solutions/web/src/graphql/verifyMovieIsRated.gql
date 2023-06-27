@@ -1,0 +1,8 @@
+query movieIsRated($userId:ID!,$movieId:ID!){
+  User(userId:$userId){
+    rated(filter:{movieId:$movieId}){
+      movieId
+      title
+    }
+  }
+}
