@@ -182,14 +182,15 @@ export default {
           },
         });
       }
-      return await this.$apollo.mutate({
-        mutation: require(`@/graphql/updateRateMovie.gql`),
-        variables: {
-          userId: this.user.userId,
-          movieId: movieId,
-          rated: rated,
-        },
-      });
+      return null
+      // await this.$apollo.mutate({
+      //   mutation: require(`@/graphql/updateRateMovie.gql`),
+      //   variables: {
+      //     userId: this.user.userId,
+      //     movieId: movieId,
+      //     rated: rated,
+      //   },
+      // });
     },
     async fetchRecommendedMovies() {
       const response = await this.$apollo.query({
