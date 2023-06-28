@@ -5,7 +5,7 @@ Vue.use(Router)
 const home = () => import("@/pages/Home/index.vue");
 const login = () => import("@/pages/Login/index.vue");
 const signup =() => import("@/pages/Signup/index.vue");
-
+const movie =() => import("@/pages/Movie/index.vue");
 let routes =[
     {
         path: "/home",
@@ -23,6 +23,12 @@ let routes =[
         path: "/signup",
         name: "Signup-Page",
         components: { default: signup },
+        meta: { forAuth: false, title: "Inicio" }
+    },
+    {
+        path: "/movie/:id",
+        name: "Movie-Page",
+        components: { default: movie },
         meta: { forAuth: false, title: "Inicio" }
     },
 ]
