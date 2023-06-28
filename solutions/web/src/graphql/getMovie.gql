@@ -1,0 +1,8 @@
+query FetchMovies($movieId:ID!){
+  Movie(first:1 movieId:$movieId){
+    movieId
+    title
+    poster
+    in_genre{name}
+  }
+}
